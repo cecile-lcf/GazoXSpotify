@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="img/BSB_3D_LOGO11_95x@2x.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <title>Gazo X Spotify</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $('#album button').click(function(){
+                console.log('ok');
+                $('#pop-up').css('display', 'block');
+                $('#intro').css('filter', 'blur(3px');
+                $('#album').css('filter', 'blur(3px');
+            })
+
+            $('#pop-up a').click(function(){
+                $('#pop-up').css('display', 'none');
+            })
+
+
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <div>
+            <figure>
+                <img src="img/BSB_3D_LOGO11_95x@2x.png" alt="">
+            </figure>
+            <p>X</p>
+            <figure>
+                <img src="img/Spotify_Logo_CMYK_White.png" alt="">
+            </figure>
+        </div>
+    </header>
+    <main>
+        <article id="intro">
+            <h1>
+                Gazo X Spotify
+            </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, officiis molestiae sint eius eos, doloremque quidem dolorum odio aperiam quas ipsam delectus placeat minus numquam! Similique dolores delectus illo itaque!</p>
+            <div>
+                <figure>
+                    <img src="img/PHOTO/image00004.jpeg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/PHOTO/image00002.jpeg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/PHOTO/image00006.jpeg" alt="">
+                </figure>
+            </div>
+        </article>
+        <article id="album">
+            <div class="gauche">
+                <figure>
+                    <img src="img/PHOTO/POCHETTE.jpg" alt="">
+                </figure>
+            </div>
+            <div class="droite">
+                <h1>Diament</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, praesentium voluptas. Numquam at nostrum similique iure quos, recusandae blanditiis commodi, voluptatem incidunt ipsum eveniet unde debitis nulla rem esse architecto.</p>
+                <button>ACHETER !</button>
+            </div>
+
+        </article>
+        <article id="pop-up">
+            <a href="index.html">Retour</a>
+            <article id="haut">
+                <div class="gauche">
+                    <figure>
+                            <img src="img/PHOTO/POCHETTE.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="droite">
+                    <h1>Diamant</h1>
+                    <table>
+                        <tr>
+                            <th>
+                                <h2>Formule Basique</h2>
+                                <p>Album + 6 mois Spotify Premium</p>
+                            </th>
+                            <th>100 $</th>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                <h2>Formule Avancée</h2>
+                                <p>Album + 1 an Spotify Premium + 1 Sweet</p>
+                            </th>
+                            <th>100$</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <h2>Formule Extra</h2>
+                                <p>Album + 2 an Spotify Premium + Collection de vêtement Spotify + dédicace</p>
+                            </th>
+                            <th>100$</th>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+            <div id="slider">
+                <figure>
+                    <img src="img/vetement/sweat.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/vetement/pantalon.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/vetement/SOCKS_Bsb_Gazo_2002_1601110xcopie_1000x.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/vetement/PORTCLEF_09_B11sb_Gazo_2002_1601110xcopie_1600x1565copie_800x.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/vetement/Bsb_Gazo_06copie_800x.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/vetement/Bsb_Gazo_05_800x.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/vetement/Bsb_Gazo_03_800x.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="img/vetement/Bsb_Gazo_01_800x.jpg" alt="">
+                </figure>
+            </div>
+
+            <form action="POST">
+                <div id="type">
+                    <div>
+                        <label for="basique">Formule basique</label>
+                        <input type="checkbox" id="basique" name="basique" value="basique">
+                    </div>
+                    <div>
+                        <label for="avancée">Formule Avancée</label>
+                        <input type="checkbox" name="avancée" id="avancée">
+                    </div>
+                    <div>
+                        <label for="extra">Formule Extra</label>
+                        <input type="checkbox" name="extra" id="extra">
+                    </div>
+                </div>
+                <div id="autre">
+                    <div>
+                        <label for="quantite"> Quantite</label>
+                        <input type="number" name="quantite" id="quantite" placeholder="1">
+                    </div>
+                    <div>
+                        <label for="total">TOTAL</label>
+                        <input type="number" name="total" id="total" placeholder="50$">
+                    </div>
+                </div>
+            </form>
+            <button type="submit">Commander maintenant</button>
+
+        </article>
+
+    </main>
+    <footer>
+        <article>
+            <form action="POST">
+                <label for="newsletter">Inscrivez-vous à la newsletter</label>
+                <input type="email" placeholder="ingrid.giercszak@gmail.com" name="newsletter" id="newsletter">
+            </form>
+            <div>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-spotify"></i>
+            </div>
+            <ul>
+                <li>
+                    <a href="https://bsbstore.fr/">BSB store</a>
+                </li>
+                <li>
+                    <a href="https://www.spotify.com/fr/">Spotify</a>
+                </li>
+            </ul>
+            
+        </article>
+        <p id="mention legal">C Gazo X Spotify</p>      
+        
+    </footer>
+
+</body>
+</html>

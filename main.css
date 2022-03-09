@@ -1,0 +1,525 @@
+body {
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+    font-size: 16px;
+}
+
+header {
+    grid-area: header;
+    background-color: black;
+    color: #c00;
+    font-size: 3rem;
+}
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
+}
+
+header figure {
+    margin: 20px 40px;
+}
+
+
+main {
+    grid-area: main;
+    position: relative;
+}
+
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin : 60px 100px;
+}
+
+#intro div {
+    display: flex;
+}
+
+#intro figure {
+    margin: 30px 15px;
+}
+
+#intro div img{
+    width: 200px;
+    height: 270px;
+
+}
+
+#intro h1 {
+    font-size: 3rem;
+    margin : 10px auto;
+}
+
+
+
+#album {
+    display: flex;
+    box-shadow: 7px 7px 10px gray;
+    margin : 60px 150px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+#album img {
+    width: 350px;
+    margin: 20px;
+    border-radius: 7px;
+}
+
+#album .droite {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+#album h1 {
+    font-size: 3rem;
+}
+
+#album p {
+    margin : 10px 60px 30px 0;
+}
+
+button {
+    background-color: #c00;
+    border-radius: 25px;
+    border: none;
+    padding: 10px;
+    width: 250px;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* --------------------------------------------------- */
+
+
+
+#pop-up {
+    display: none;
+}
+
+#pop-up {
+    position :absolute;
+    top : 0;
+    left : 10%;
+    z-index: 1;
+    background-color: #614848d8;
+    width: 80% ;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+    overflow-y: scroll;
+    height: 900px;
+}
+#pop-up a {
+    color: white;
+    margin-left : 10px;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+#pop-up #haut {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#pop-up .gauche {
+    margin-right: 30px;
+}
+
+#pop-up #haut .gauche img{
+    width: 370px;
+    border-radius: 25px;
+}
+
+#pop-up .droite h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+#pop-up th {
+    border: solid white 0.75px;
+    padding: 7px;
+
+}
+
+#pop-up tr th:nth-child(2){
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: auto 0;
+
+}
+
+#pop-up .droite p, #pop-up .droite h2{
+    text-align: start;
+}
+
+#slider {
+    display: flex;
+    overflow: scroll;
+    margin: 80px 0;
+    overflow-y: hidden;
+    scrollbar-width: 10px;
+    scrollbar-color: white;
+}
+
+#slider figure {
+    margin : 0 30px 20px 30px;
+}
+
+#slider img {
+    width: 140px;
+    border-radius: 15px;
+}
+
+
+#pop-up form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#pop-up form #type {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#pop-up form #type div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 60px;
+    align-items: center;
+    border: solid white 0.75px;
+    padding: 5px 10px;
+}
+#pop-up form #type div:nth-child(3){
+    margin-right: 0;
+}
+#pop-up form #type div:nth-child(1){
+    margin-left: 0;
+}
+
+#pop-up form #autre {
+    display: flex ;
+    margin: 50px 0;
+}
+
+#pop-up form #autre div {
+    margin: 0 50px;
+}
+
+#pop-up form #autre div label {
+    border-left: solid white 0.75px;
+    border-top: solid white 0.75px;
+    border-bottom: solid white 0.75px;
+    padding: 10px;
+
+}
+
+#pop-up form #autre div input {
+    width: 50px;
+    height: 40px;
+    border: solid white;
+}
+
+#pop-up button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+/* -------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    grid-area: footer;
+    background-color: black;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+footer article{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+    color: white;
+}
+
+footer a, footer article div i {
+    color: white;
+}
+
+footer p {
+    color: gray;
+    margin-left: 150px;
+}
+
+
+
+
+footer form {
+    display: flex;
+    flex-direction: column;
+}
+
+footer input {
+    border-radius: 5px;
+    padding: 2px;
+    opacity: 0.8;
+    margin-top: 5px;
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width :1064px) {
+    
+    #album button {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    #album img {
+        width: 200px;
+    }
+
+    #album .gauche {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #pop-up{
+        height: 800px;
+    }
+}
+
+@media screen and (max-width :900px){
+    #pop-up #haut .gauche figure img {
+        width: 250px;
+    }
+    
+}
+
+@media screen and (max-width:845px) {
+    #intro figure img {
+        width: 100px;
+        height: 135px;
+        
+
+    }
+
+    #intro {
+        margin-bottom: -20px;
+    }
+
+    
+}
+
+@media screen and (max-width : 830px){
+    #album {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 400px;
+        margin : 40px auto;
+    }
+
+    #album .droite h1 {
+        margin: 0;
+        text-align: center;
+        margin-left: -20px;
+    }
+
+    #album .droite {
+        margin-left: 30px;
+    }
+
+    #pop-up {
+        height: 900px;
+    }
+    
+}
+
+
+@media screen and (max-width :650px){
+    #pop-up #haut {
+        flex-direction: column;
+        
+    }
+    #pop-up #haut .gauche figure img {
+
+        width: 175px;
+        margin-right: 0;
+    }
+    #pop-up #haut .gauche figure {
+        margin-right: 0;
+    }
+
+    #pop-up #slider figure {
+        margin: 0 20px 20px 20px
+    }
+
+    #pop-up form #type div {
+        margin: 0 25px;
+
+    }
+
+    #pop-up form #autre div {
+        margin : 0 20px;
+    }
+    
+}
+
+@media screen and (max-width : 530px) {
+    #pop-up {
+        height: 950px;
+    }
+    
+}
+
+@media screen and (max-width : 505px) {
+    #pop-up {
+        height: 1000px;
+    }
+    
+}
+
+@media screen and (max-width : 469px) {
+    #pop-up form #autre div input {
+        width: 25px;
+    }
+    #pop-up form #autre div {
+        margin: 0 5px;
+    }
+    #pop-up form #type div {
+        margin: 0 5px;
+    }
+    
+}
+
+@media screen and (max-width : 446px) {
+    #album {
+        width: 300px;
+    }
+
+    #intro {
+        margin : 0 50px;
+    }
+
+    #intro h1 {
+        text-align: center;
+    }
+
+    
+    
+}
+@media screen and (max-width : 400px) {
+    #pop-up {
+        height: 1100px;
+    }
+    #pop-up #haut .gauche figure img {
+        width: 200px;
+    }
+    
+}
+
+
+@media screen and (max-width: 395px){
+    #intro figure {
+        margin : 5px 2px;
+    }
+    #pop-up {
+        height: 1050px;
+    }
+    
+}
+
+@media screen and (max-width : 340px) {
+    #pop-up form #autre{
+        flex-direction: column;
+    }
+    #pop-up form #autre div{
+        margin: 5px 0;
+    }
+
+
+}
+
+@media screen and (max-width : 320px){
+    #intro figure img {
+        width: 75px;
+        height: 105px;
+    }
+
+    #album {
+        width: 220px;
+    }
+
+    #album .droite {
+        margin: 0 5px;
+    }
+
+    #album p {
+        margin : 10px 0px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
